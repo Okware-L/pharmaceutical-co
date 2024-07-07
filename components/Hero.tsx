@@ -15,7 +15,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="p-5 bg-gradient-to-b from-sky-800 to-sky-700 rounded-3xl shadow-2xl m-10">
+    <section className="p-5 bg-gradient-to-b from-sky-800 to-sky-700 rounded-3xl shadow-2xl m-4">
       <div className="text-white bg-sky-500/50 rounded-xl hidden sm:flex mb-10 mt-3 p-2 justify-between flex-wrap">
         {services.map((service, index) => (
           <Link key={index} href={service.link} className="flex-1 min-w-fit">
