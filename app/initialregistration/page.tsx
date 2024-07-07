@@ -4,7 +4,7 @@ import Link from "next/link";
 import { PatientForm } from "@/components/forms/PatientForm";
 import { PasskeyModal } from "@/components/PasskeyModal";
 
-const landingPage = ({ searchParams }: SearchParamProps) => {
+const initialRegistration = ({ searchParams }: SearchParamProps) => {
   const isAdmin = searchParams?.admin === "true";
 
   return (
@@ -14,7 +14,7 @@ const landingPage = ({ searchParams }: SearchParamProps) => {
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
           <Image
-            src="/assets/icons/jmwhite.svg"
+            src="/jmwhite.svg"
             height={1000}
             width={1000}
             alt="patient"
@@ -39,10 +39,10 @@ const landingPage = ({ searchParams }: SearchParamProps) => {
         height={1000}
         width={1000}
         alt="patient"
-        className="side-img max-w-[50%]"
+        className="side-img max-w-[40%]"
       />
     </div>
   );
 };
 
-export default landingPage;
+export default initialRegistration;

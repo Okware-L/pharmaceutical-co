@@ -1,8 +1,9 @@
-import React from "react";
-import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
+
+import React from "react";
+
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
+import { Button } from "./ui/button";
 
 interface SolutionItemProps {
   title: string;

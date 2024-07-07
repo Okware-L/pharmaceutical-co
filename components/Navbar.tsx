@@ -1,10 +1,11 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 import React from "react";
-import { useEffect } from "react";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
-//import { Icons } from "@/components/icons";
+//  import { useEffect } from "react";
+//  import { Icons } from "@/components/icons";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,6 +15,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+
 import {
   Sheet,
   SheetContent,
@@ -23,8 +25,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -132,13 +133,22 @@ export default function Navbar() {
               <NavigationMenuTrigger>Consult A Doctor</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <ListItem href="/video" title="Video Consultation">
+                  <ListItem
+                    href="/initialregistration"
+                    title="Video Consultation"
+                  >
                     Live video calls with expoert physicians
                   </ListItem>
-                  <ListItem href="/chat" title="Chat with a doctor">
+                  <ListItem
+                    href="/initialregistration"
+                    title="Chat with a doctor"
+                  >
                     Message with a doctor
                   </ListItem>
-                  <ListItem href="/appointment" title="Book Appointment">
+                  <ListItem
+                    href="/initialregistration"
+                    title="Book Appointment"
+                  >
                     Scedule a meeting with one of our highly esteemed doctors
                   </ListItem>
                   <ListItem href="/location" title="Location specific">
@@ -183,8 +193,8 @@ export default function Navbar() {
       <div className="navbar-end">
         {/* Mount the UserButton component */}
         <div className="flex justify-center items-center">
-          <Link href={"/view"}>
-            <button className="mx-3 text-sm font-base">View Profile</button>
+          <Link href={"/initialregistration"}>
+            <button className="mx-3 text-sm font-base">sign In/Up</button>
           </Link>
         </div>
 
