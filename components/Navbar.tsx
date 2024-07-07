@@ -88,7 +88,7 @@ export default function Navbar() {
                   </h2>
                 </SheetTitle>
                 <SheetDescription>
-                  <div className="text-slate-900 bg-sky-200 rounded-2xl sm:flex mb-10 mt-3">
+                  <div className="text-slate-100 sm:flex mb-10 mt-3">
                     <div className="md:border-r border-b border-white p-3 flex mx-2 items-center ">
                       Emergency services
                       <ChevronRight />

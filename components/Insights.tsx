@@ -6,24 +6,11 @@ import { Button } from "./ui/button";
 export default function Insights() {
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 mt-10">
-      <h1 className="text-3xl font-medium my-5">Insights</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h1 className="text-3xl text-center font-medium my-12">Insights</h1>
+      <div className="grid p-4 grid-cols-1 md:grid-cols-3 gap-6">
         <div className="space-y-4">
-          <div className="aspect-w-16 aspect-h-9">
-            <Image
-              alt="Nico Rosberg"
-              className="object-cover"
-              height="180"
-              src="/doc.jpg"
-              style={{
-                aspectRatio: "320/180",
-                objectFit: "cover",
-              }}
-              width="320"
-            />
-          </div>
           <div className="space-y-2">
-            <h3 className="text-lg font-extralight">
+            <h3 className="text-2xl font-extralight">
               Creating a lifeline for underserved communities by establishing
               accessible pharmacy services in areas lacking adequate healthcare
               resources.
@@ -34,27 +21,11 @@ export default function Insights() {
               <ClockIcon className="h-5 w-5" />
               <span>5 MIN</span>
             </div>
-            <Button className="px-4 py-2 text-xs uppercase" variant="outline">
-              Family
-            </Button>
           </div>
         </div>
         <div className="space-y-4">
-          <div className="aspect-w-16 aspect-h-9">
-            <Image
-              alt="Generative AI's massive rally"
-              className="object-cover"
-              height="180"
-              src="/hosi.jpg"
-              style={{
-                aspectRatio: "320/180",
-                objectFit: "cover",
-              }}
-              width="320"
-            />
-          </div>
           <div className="space-y-2">
-            <h3 className="text-lg font-extralight">
+            <h3 className="text-2xl font-extralight">
               Embracing cutting-edge research and technology to bring
               groundbreaking medical advancements to the forefront of healthcare
             </h3>
@@ -64,27 +35,11 @@ export default function Insights() {
               <ClockIcon className="h-5 w-5" />
               <span>3 MIN</span>
             </div>
-            <Button className="px-4 py-2 text-xs uppercase" variant="outline">
-              Pharma
-            </Button>
           </div>
         </div>
         <div className="space-y-4">
-          <div className="aspect-w-16 aspect-h-9">
-            <Image
-              alt="Emerging markets: A sweet spot in fixed income"
-              className="object-cover"
-              height="180"
-              src="/content2.jpg"
-              style={{
-                aspectRatio: "320/180",
-                objectFit: "cover",
-              }}
-              width="320"
-            />
-          </div>
           <div className="space-y-2">
-            <h3 className="text-lg font-extralight">
+            <h3 className="text-2xl font-extralight">
               By leveraging technology, we aim to enhance patient engagement,
               improve health outcomes, and promote proactive healthcare
               management.
@@ -95,9 +50,6 @@ export default function Insights() {
               <ClockIcon className="h-5 w-5" />
               <span>4 MIN</span>
             </div>
-            <Button className="px-4 py-2 text-xs uppercase" variant="outline">
-              Medicine
-            </Button>
           </div>
         </div>
       </div>

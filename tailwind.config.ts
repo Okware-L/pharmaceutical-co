@@ -53,7 +53,7 @@ const config = {
         appointments: "url('/assets/images/appointments-bg.png')",
         pending: "url('/assets/images/pending-bg.png')",
         cancelled: "url('/assets/images/cancelled-bg.png')",
-        hero: "url('/assets/images/ambulance.jpeg')",
+        hero: "url('/assets/images/amb2.jpeg')",
       },
       keyframes: {
         "accordion-down": {
